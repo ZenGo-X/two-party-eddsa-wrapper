@@ -2,7 +2,7 @@ use reqwest;
 
 use super::Result;
 use super::utilities::requests;
-use multi_party_ed25519::protocols::aggsig::*;
+pub use multi_party_ed25519::protocols::aggsig::*;
 
 const PARTY2_INDEX: usize = 1; // client (self)
 

@@ -3,8 +3,7 @@ mod tests {
     extern crate two_party_eddsa_server;
     extern crate two_party_eddsa_client;
 
-    use multi_party_ed25519::protocols::aggsig::*;
-    use two_party_eddsa_client::api::ClientShim;
+    use two_party_eddsa_client::api::*;
     use std::{thread, time};
 
     #[test]
