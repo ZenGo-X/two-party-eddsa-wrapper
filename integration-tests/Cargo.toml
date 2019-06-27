@@ -5,6 +5,6 @@ authors = ["Oded Leiba <oded@kzencorp.com>"]
 edition = "2018"
 
 [dependencies]
-multi-party-ed25519 = { path = "../../multi-party-eddsa" }
+multi-party-ed25519 = { git = "https://github.com/KZen-networks/multi-party-eddsa" , tag = "v0.1.0" }
 two-party-eddsa-server = { path = "../server" }
 two-party-eddsa-client = { path = "../client" }
