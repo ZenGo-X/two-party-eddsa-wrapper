@@ -1,0 +1,25 @@
+[package]
+name = "two-party-eddsa-server"
+version = "0.1.0"
+authors = ["Oded Leiba <oded@kzencorp.com>"]
+edition = "2018"
+
+[lib]
+name = "two_party_eddsa_server"
+path = "src/lib.rs"
+
+[[bin]]
+name = "server_exec"
+path = "src/main.rs"
+
+[dependencies]
+rocket = "0.4.0"
+rocket_contrib = "0.4.0"
+rocksdb = "0.10.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+log = "0.4"
+uuid = { version = "0.7", features = ["v4"] }
+failure = "0.1.5"
+multi-party-ed25519 = { git = "https://github.com/KZen-networks/multi-party-eddsa" , tag = "v0.1.0" }
