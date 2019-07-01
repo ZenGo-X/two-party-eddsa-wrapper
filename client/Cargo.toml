@@ -16,4 +16,4 @@ log = "0.4"
 time = "0.1.42"
 reqwest = "0.9.5"
 failure = "0.1.5"
-multi-party-ed25519 = { git = "https://github.com/KZen-networks/multi-party-eddsa" , tag = "v0.1.0" }
+multi-party-ed25519 = { git = "https://github.com/KZen-networks/multi-party-eddsa", branch = "feature/libra-support" }

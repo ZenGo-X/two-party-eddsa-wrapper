@@ -6,7 +6,7 @@ pub use multi_party_ed25519::protocols::aggsig::*;
 
 const PARTY2_INDEX: usize = 1; // client (self)
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct ClientShim {
     pub client: reqwest::Client,
     pub endpoint: String,

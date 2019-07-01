@@ -117,6 +117,7 @@ pub fn sign_first(
     Ok(Json(party1_sign_first_msg))
 }
 
+#[allow(non_snake_case)]
 #[post("/sign/<id>/second", format = "json", data = "<party2_sign_second_msg>")]
 pub fn sign_second(
     state: State<Config>,
